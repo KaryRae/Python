@@ -18,8 +18,8 @@ for contar in range(1,101):
 
 
 #4 Whoa. Es un gran idiota:
-#for i in range(1, 500000, 2):
-    #print(i)
+for i in range(1, 500000, 2):
+    print(i)
 
 #5 Cuenta regresiva de a 4:
 for i in range(2018, 0, -4):
