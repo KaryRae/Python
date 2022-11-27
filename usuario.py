@@ -13,7 +13,7 @@ class Usuario:
 
     def mostrar_balance_usuario(self):
         print(f"Usuario: {self.name} , {self.balance_cuenta}")
-
+        
 Pedro =Usuario("Pedro López", "pedro@dojo.com")
 Pedro.hacer_deposito(1000)
 Pedro.hacer_deposito(2000)
