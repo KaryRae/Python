@@ -32,13 +32,23 @@ estudiantes2 = [
 def iterateDictionary(estudiantes2):
     for elem in estudiantes2:
         for clave, valor in elem.items():
-            print(clave, "-", valor, "-")
-
+            print(clave, "-" , valor, "," )
 iterateDictionary(estudiantes2)
 
 
 # debería devolver: (está bien si cada par clave-valor termina en 2 líneas separadas;
 # un bonus para que aparezcan exactamente como se muestra a continuación)
+
+# Pregunta 3 
+def iterateDictionary2(first_name, estudiantes2):
+    for first_name in estudiantes2:
+        for  valor in first_name.items():
+            print( "-" , valor, "," )
+
+iterateDictionary2()
+
+
+
 
 # Pregunta 4
 
