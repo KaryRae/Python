@@ -40,14 +40,14 @@ iterateDictionary(estudiantes2)
 # un bonus para que aparezcan exactamente como se muestra a continuación)
 
 # Pregunta 3 
-def iterateDictionary2(first_name, estudiantes2):
-    for first_name in estudiantes2:
-        for  valor in first_name.items():
-            print( "-" , valor, "," )
+def iterateDictionary2(key_name, some_list):
+    for item in some_list:
+        for key in item:
+            if key==key_name:
+                print(item[key])
 
-iterateDictionary2()
-
-
+iterateDictionary2('first_name', estudiantes2)
+iterateDictionary2('last_name', estudiantes2)
 
 
 # Pregunta 4
