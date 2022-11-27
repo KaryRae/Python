@@ -13,7 +13,13 @@ class Usuario:
 
     def mostrar_balance_usuario(self):
         print(f"Usuario: {self.name} , {self.balance_cuenta}")
-        
+
+    def transferencia(self,amount,usuario):
+        self.balance_cuenta -= amount
+        usuario.balance_cuenta += amount
+        self.mostrar_balance_usuario()
+        usuario.mostrar_balance_usuario()
+
 Pedro =Usuario("Pedro López", "pedro@dojo.com")
 Pedro.hacer_deposito(1000)
 Pedro.hacer_deposito(2000)
@@ -35,3 +41,4 @@ marce.hacer_retiro(1000)
 marce.hacer_retiro(500)
 marce.mostrar_balance_usuario()
 
+Pedro.transferencia(800, marce)
